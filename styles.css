@@ -103,3 +103,18 @@ p.slogan {
     padding: 5px;
 }
 
+.sobre-nos{
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre-nos h1{
+    align-self: center;
+}
+
+.sobre-nos h3 {
+    align-self: left;
+}
