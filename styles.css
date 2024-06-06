@@ -9,7 +9,7 @@ body{
     width: 100vw;
     height: 100vh;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .fundo {
@@ -17,8 +17,8 @@ body{
     width: 100vw;
     height: 100vh;
     position: fixed; 
-    z-index: -2;
-    opacity: 50%;
+    z-index: -5;
+    opacity: 25%;
 }
 
 .fundo-header{
@@ -31,7 +31,7 @@ body{
 
 .img-header{
     position: fixed;
-    z-index: -1;
+    z-index: -4;
     width: 100vw;
     height: 100px;
 }
@@ -73,16 +73,31 @@ body{
 
 .institucional{
     padding: 100px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
 }
 
 .institucional h1{
     margin-bottom: 10px;
+    align-self: center;
+}
+
+.institucional h2{
+    padding: 5px;
+    align-self: center;
+}
+
+p.slogan {
+    padding: 5px;
+    align-self: center;
+}
+
+.institucional h3{
+    padding: 5px;
 }
 
 .insitucional p{
     padding: 5px;
 }
 
-.institucional h3{
-    padding: 5px;
-}
