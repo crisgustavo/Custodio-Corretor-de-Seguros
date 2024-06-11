@@ -536,6 +536,6 @@ textarea {
     width: 270px;
     border-radius: 8px;
     border: 1px solid rgb(25, 123, 189);
-    padding-left: 5px;
+    padding: 5px;
     outline-color: #18D80F;
 }
