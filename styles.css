@@ -14,17 +14,24 @@ body{
 }
 
 main {
-    margin-top: 150px;
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
-    position: static;
+/*    position: static;*/
     width: 100%;
-    height: 200px;
+    height: 300px;
+    align-items: center;
+}
+
+main h2 {
+    color: rgb(25, 123, 189);
+    text-shadow: 0.1em 0.1em 0.2em rgb(100, 100, 100);
 }
 
 .container {
     width: 100%;
-/*    mask-image: linear-gradient(to right transparent, #000 10% 90%, transparent);*/
+    height: 220px;
+    mask-image: linear-gradient(to right, transparent, #000 15% 85%, transparent);
 }
 
 .container:hover .item {
@@ -36,10 +43,14 @@ main {
     filter: grayscale(0);
 }
 
+.container .item:hover button {
+    visibility: visible;
+}
+
 .carrossel {
     display: flex;
     width: 100%;
-    position: relative;
+/*    position: relative;*/
 }
 
 .carrossel h3 {
@@ -71,6 +82,10 @@ main {
     margin-bottom: 10px;
 }
 
+.item button {
+    visibility: hidden;
+}
+
 @keyframes autorun {
     from{
         left: 100%;
@@ -88,6 +103,137 @@ button {
     font-weight: bold;
     box-shadow: 5px 5px 5px 0px rgb(100, 100, 100);
     cursor: pointer;
+}
+
+.voltar{
+    display: flex;
+    gap: 20px;
+}
+
+.div-automovel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(25, 123, 189);
+    height: auto;
+    width: 400px;
+    border: solid;
+    padding: 5px;
+    border-radius: 25px;
+    text-align: center;
+    position: fixed;
+    left: -300px;
+    visibility: hidden;
+}
+
+.div-automovel img {
+    width: 98%;
+    border-radius: 20px;
+}
+
+.div-empresarial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(25, 123, 189);
+    height: auto;
+    width: 400px;
+    border: solid;
+    padding: 5px;
+    border-radius: 25px;
+    text-align: center;
+    position: fixed;
+    left: -300px;
+    visibility: hidden;
+}
+
+.div-empresarial img {
+    width: 98%;
+    border-radius: 20px;
+}
+
+.div-residencial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(25, 123, 189);
+    height: auto;
+    width: 400px;
+    border: solid;
+    padding: 5px;
+    border-radius: 25px;
+    text-align: center;
+    position: fixed;
+    left: -300;
+    visibility: hidden;
+}
+
+.div-residencial img {
+    width: 98%;
+    border-radius: 20px;
+}
+
+.div-vida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(25, 123, 189);
+    height: auto;
+    width: 400px;
+    border: solid;
+    padding: 5px;
+    border-radius: 25px;
+    text-align: center;
+    position: fixed;
+    left: -300px;
+    visibility: hidden;
+}
+
+.div-vida img {
+    width: 98%;
+    border-radius: 20px;
+}
+
+.div-agricola {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(25, 123, 189);
+    height: auto;
+    width: 400px;
+    border: solid;
+    padding: 5px;
+    border-radius: 25px;
+    text-align: center;
+    position: fixed;
+    left: -300px;
+    visibility: hidden;
+}
+
+.div-agricola img {
+    width: 98%;
+    border-radius: 20px;
+}
+
+.div-portateis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(25, 123, 189);
+    height: auto;
+    width: 400px;
+    border: solid;
+    padding: 5px;
+    border-radius: 25px;
+    text-align: center;
+    position: fixed;
+    left: -300px;
+    visibility: hidden;
+}
+
+.div-portateis img {
+    width: 98%;
+    border-radius: 20px;
 }
 
 .fundo {
@@ -122,6 +268,7 @@ button {
     justify-content: right;
     margin: 15px;
     gap: 20px;
+    margin-right: 20px;
 }
 
 .cabeçalho a{
@@ -129,8 +276,7 @@ button {
     text-decoration: none;
     font-size: 18px;
     font-weight: bolder;
-    cursor: pointer;
-    justify-content: right;
+    cursor: pointer;    
 }
 
 .cabeçalho a:hover{
@@ -156,7 +302,7 @@ button {
     margin-right: 100px;
     display: flex;
     flex-direction: column;
-    position: fixed;
+    color: rgb(25, 123, 189);
 }
 
 .institucional h1{
@@ -188,6 +334,7 @@ p.slogan {
     margin-right: 100px;
     display: flex;
     flex-direction: column;
+    color: rgb(25, 123, 189)
 }
 
 .sobre-nos h1{
@@ -196,4 +343,68 @@ p.slogan {
 
 .sobre-nos h3 {
     align-self: left;
+}
+
+.seguradoras {
+    display: flex;
+    flex-direction:row;
+    height: 50px;
+    gap: 20px;
+    align-items: top;
+    justify-content: center;
+}
+
+.seguradoras img {
+    height: 30px;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(25, 123, 189);
+    color: white;
+    position: fixed;
+    height: 100px;
+    width: 100vw;
+    bottom: 0;
+    padding: 10px;
+    gap: 500px;
+    font-size: 14px;
+}
+
+.contato-rodape img {
+    position: fixed;
+    height: 10px;
+}
+
+.imagem-contato{
+    display: flex;
+    flex-direction: column;
+    width: 13px;
+    left: 50%;
+    transform: translateX(-245px);
+    gap: 3px;
+    margin-top: 8px;
+}
+
+.contato-rodape {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-140px);
+    margin-top: 8px;
+}
+
+.logo-rodape {
+    height: 50px;
+    margin-top: 15px;
+}
+
+.whatsapp {
+    height: 80px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }
