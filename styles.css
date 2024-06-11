@@ -17,9 +17,14 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 920px;
+    height: 950px;
     align-items: center;
     margin-bottom: 100px;
+}
+
+main h1 {
+    color: rgb(25, 123, 189);
+    text-shadow: 0.1em 0.1em 0.2em rgb(100, 100, 100);
 }
 
 main h2 {
@@ -491,4 +496,46 @@ p.slogan {
     position: fixed;
     right: 10px;
     bottom: 10px;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+    gap: 50px;
+    color: rgb(25, 123, 189);
+}
+
+.form-email {
+    height: 380px;
+    width: 500px;
+    border: solid;
+    border-radius: 25px;
+    border-color: rgb(25, 123, 189);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.form-email {
+    align-items: center;
+    gap: 20px;
+}
+
+input {
+    height: 30px;
+    width: 270px;
+    border-radius: 8px;
+    border: 1px solid rgb(25, 123, 189);
+    padding-left: 5px;
+    outline-color: #18D80F;
+}
+
+textarea {
+    height: 150px;
+    width: 270px;
+    border-radius: 8px;
+    border: 1px solid rgb(25, 123, 189);
+    padding-left: 5px;
+    outline-color: #18D80F;
 }
