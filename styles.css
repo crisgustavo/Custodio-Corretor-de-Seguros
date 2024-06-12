@@ -88,13 +88,6 @@ a {
     height: 50px;
 }
 
-.logo-cabeçalho:hover {
-    height: 60px;
-    margin: 15px;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
-}
-
 .cabeçalho a:hover{
     color: rgb(0, 0, 128);
     font-size: 20px;
@@ -538,4 +531,199 @@ textarea {
     border: 1px solid rgb(25, 123, 189);
     padding: 5px;
     outline-color: #18D80F;
+}
+
+@media(max-width: 1100px) {
+
+    .fundo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        position: fixed; 
+        z-index: -5;
+        opacity: 25%;
+    }
+
+    .fundo-header {
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        height: 60px;
+    }
+
+    .img-header{
+        left: -50%;
+        width: 150%;
+        height: 50px;
+        top: 0;
+    }
+
+    .cabeçalho{
+        margin: 5px;
+        margin-top: 15px;
+        justify-content: right;
+        gap: 5px;
+    }
+
+    .cabeçalho a{
+        font-size: 10px;
+        font-weight: bolder;
+        justify-content: right;
+    }
+
+    .cabeçalho a:hover{
+        color: rgb(0, 0, 128);
+        font-size: 12px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .cabeçalho-logo {
+        width: 30px;
+        overflow: hidden;
+        position: fixed;
+        top: -3px;
+        z-index: 2;
+    }
+
+    .logo-cabeçalho {
+        margin: 5px;
+        height: 25px;
+        z-index: 2;
+    }
+
+    main {
+        margin-top: 20px;
+        width: 100vw;
+        height: 1700px;
+    }
+
+    .corretor img {
+        width: 100vw;
+    }
+
+    .corretor {
+        width: 100vw;
+        text-align: center;
+    }
+
+    .logo-rodape {
+        height: 16px;
+        margin-top: 20px;
+    }
+
+    .whatsapp {
+        height: 30px;
+    }
+
+    .contato-rodape {
+        width: 350px;
+        position: fixed;
+        left: 60%;
+        transform: translateX(-115px);
+        bottom: 4px;
+    }
+
+    .imagem-contato {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        bottom: 4px;
+        left: 60%;
+        transform: translateX(-133px);
+    }
+
+    .item1 button {
+        visibility: visible;
+    }
+    
+    .produtos-seguros:hover .item1 {
+        filter: grayscale(0);
+    }
+    
+    .produtos-seguros .item1:hover {
+        filter: grayscale(0);
+    }
+
+    .produtos-consorcio:hover .item1 {
+        filter: grayscale(0);
+    }
+    
+    .produtos-consorcio .item1:hover {
+        filter: grayscale(0);
+    }
+
+    .produtos-seguros {
+        width: 90%;
+    }
+    
+    .produtos-consorcio {
+         width: 90%;
+    }
+
+    .seguradoras {
+        width: 90%;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .main-produtos {
+        height: auto;
+    }
+
+    .div-automovel {
+        width: 95%;
+    }
+    
+    
+    .div-empresarial {
+        width: 95%;
+    }
+    
+    .div-residencial {
+        width: 95%;
+    }
+    
+    .div-vida {
+        width: 95%;
+    }
+    
+    .div-agricola {
+        width: 95%;
+    }
+
+    .div-portateis {
+        width: 95%;
+    }
+    
+    .div-consautomovel {
+        width: 95%;
+    }
+
+    .div-consimovel {
+        width: 95%;
+    }
+
+    .mapa {
+        flex-wrap: wrap;
+        gap: 0px;
+        height: 900px;
+    }
+
+    .institucional {
+        margin-top: 80px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 100px;
+        height: auto;
+    }
+
+    .sobre-nos {
+        margin-top: 80px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 100px;
+        height: auto;
+    }
 }

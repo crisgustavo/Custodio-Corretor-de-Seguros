@@ -19,6 +19,7 @@ function saibamaisauto() {
     segauto.style.visibility = "visible"
     segauto.style.position = "unset"
     segauto.style.left = "auto"
+    window.scrollTo(0, 0)
 }
 
 function saibamaisempresarial() {
@@ -28,6 +29,7 @@ function saibamaisempresarial() {
     segempresarial.style.visibility = "visible"
     segempresarial.style.position = "unset"
     segempresarial.style.left = "auto"
+    window.scrollTo(0, 0)
 }
 
 function saibamaisresidencial() {
@@ -37,6 +39,7 @@ function saibamaisresidencial() {
     segresidencial.style.visibility = "visible"
     segresidencial.style.position = "unset"
     segresidencial.style.left = "auto"
+    window.scrollTo(0, 0)
 }
 
 function saibamaisvida() {
@@ -46,6 +49,7 @@ function saibamaisvida() {
     segvida.style.visibility = "visible"
     segvida.style.position = "unset"
     segvida.style.left = "auto"
+    window.scrollTo(0, 0)
 }
 
 function saibamaisportateis() {
@@ -55,6 +59,7 @@ function saibamaisportateis() {
     segportateis.style.visibility = "visible"
     segportateis.style.position = "unset"
     segportateis.style.left = "auto"
+    window.scrollTo(0, 0)
 }
 
 function saibamaisagricola() {
@@ -64,6 +69,7 @@ function saibamaisagricola() {
     segagricola.style.visibility = "visible"
     segagricola.style.position = "unset"
     segagricola.style.left = "auto"
+    window.scrollTo(0, 0)
 }
 
 function saibamaisautomovel() {
