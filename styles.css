@@ -595,8 +595,9 @@ textarea {
 
     main {
         margin-top: 20px;
+        margin-bottom: 40px;
         width: 100vw;
-        height: 1700px;
+        height: auto;
     }
 
     .corretor img {
